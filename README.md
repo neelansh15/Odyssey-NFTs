@@ -1,6 +1,6 @@
 # Odyssey NFTs
 
-Deployed on Rinkeby at https://rinkeby.etherscan.io/address/0x361Aa80AeD6348F7e892656b3D9cC3F115503D09.
+Deployed on Rinkeby at https://rinkeby.etherscan.io/address/0x361Aa80AeD6348F7e892656b3D9cC3F115503D09.  
 ToDo:
 Create a NodeJS script to Mint Odyssey characters in batch using Pinata
 

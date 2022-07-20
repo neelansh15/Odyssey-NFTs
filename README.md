@@ -1,3 +1,9 @@
+# Odyssey NFTs
+
+Deployed on Rinkeby at https://rinkeby.etherscan.io/address/0x361Aa80AeD6348F7e892656b3D9cC3F115503D09.
+ToDo:
+Create a NodeJS script to Mint Odyssey characters in batch using Pinata
+
 # Advanced Sample Hardhat Project
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.

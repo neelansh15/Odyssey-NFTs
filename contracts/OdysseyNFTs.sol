@@ -10,6 +10,13 @@ contract OdysseyNFTs is ERC721 {
 
     constructor() ERC721("OdysseyNFTs", "ACOdyssey") {}
 
+    event MetadataChanged(
+        uint256 _tokenId,
+        string oldURI,
+        string newURI,
+        address indexed owner
+    );
+
     function mint(string memory uri) external {
         require(tokenId < 3000, "MAX_NFT_LIMIT");
         uint256 newTokenid = ++tokenId;
@@ -29,6 +36,9 @@ contract OdysseyNFTs is ERC721 {
     function setTokenURI(uint256 _tokenId, string memory newURI) external {
         address tokenOwner = ownerOf(_tokenId);
         require(_msgSender() == tokenOwner, "ONLY_OWNER");
+
+        emit MetadataChanged(_tokenId, uris[_tokenId], newURI, tokenOwner);
+
         uris[_tokenId] = newURI;
     }
 }
